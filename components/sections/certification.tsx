@@ -11,10 +11,6 @@ import {
   DialogDescription
 } from "@/components/ui/dialog"
 
-import { useRouter } from 'next/router'
-
-const { basePath } = useRouter()
-
 type Certificate = {
   id: number
   title: string
@@ -30,7 +26,7 @@ const certificates: Certificate[] = [
     id: 1,
     title: "Deep Learning with Pytorch: Zero to GANs",
     description: "",
-    image: `${basePath}/certificate1.pdf`,
+    image: "/certificate1.pdf",
     color: "from-yellow-400 to-orange-500",
     textColor: "text-white",
     pdfUrl: "https://jovian.com/certificate/MFQWCNBRGQ",
@@ -39,7 +35,7 @@ const certificates: Certificate[] = [
     id: 2,
     title: "Python (Hackerrank)",
     description: "",
-    image: `${basePath}/python_basic_certificate.pdf`,
+    image: "/python_basic_certificate.pdf",
     color: "from-green-400 to-teal-600",
     textColor: "text-white",
     pdfUrl: "https://www.hackerrank.com/certificates/aa36c06e46e5?test_finished=true",
@@ -48,7 +44,7 @@ const certificates: Certificate[] = [
     id: 3,
     title: "Web Development with Flask",
     description: "",
-    image: `${basePath}/certificateWeb.pdf`,
+    image: "/certificateWeb.pdf",
     color: "from-blue-500 to-indigo-600",
     textColor: "text-white",
     pdfUrl: "https://jovian.com/certificate/MFQTQNZWHE",

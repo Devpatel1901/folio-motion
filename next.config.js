@@ -10,9 +10,6 @@ const nextConfig = {
   images: { unoptimized: true },
   basePath: isProd ? '/folio-motion' : '',
   assetPrefix: isProd ? '/folio-motion/' : '',
-  images: {
-    unoptimized: true,
-  },
 };
 
 module.exports = nextConfig;

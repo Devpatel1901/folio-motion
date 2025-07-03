@@ -7,10 +7,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } f
 import { FaChevronRight, FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { Card } from "@/components/ui/card"
 
-import { useRouter } from 'next/router'
-
-const { basePath } = useRouter()
-
 type Blog = {
   id: number;
   title: string;
@@ -26,7 +22,7 @@ const blogs: Blog[] = [
     id: 1,
     title: "Understanding the Gaussian Filter",
     description: "Breaking down the BLURRRRR! A comprehensive guide to the Gaussian filter, and how it works.",
-    image: `${basePath}/blog1b_image.png`,
+    image: "/blog1b_image.png",
     color: "from-blue-500 to-purple-600",
     textColor: "text-blue-100",
     mediumUrl: "https://himani-gulati.medium.com/understanding-the-gaussian-filter-c2cb4fb4f16b"
@@ -35,7 +31,7 @@ const blogs: Blog[] = [
     id: 2,
     title: "Introduction to Diffusion Models",
     description: "A theoretical understanding of Diffusion models for beginners.",
-    image: `${basePath}//blog2_image.png`,
+    image: "/blog2_image.png",
     color: "from-green-500 to-yellow-500",
     textColor: "text-green-100",
     mediumUrl: "https://himani-gulati.medium.com/introduction-to-diffusion-models-b9c8f2f534fa"
@@ -44,7 +40,7 @@ const blogs: Blog[] = [
     id: 3,
     title: "Hyper-parameter Tuning in Decision Trees and Random Forests",
     description: "A comprehensive guide to hyper-parameter tuning in Decision Trees and Random Forests.",
-    image: `${basePath}/blog3_image.png`,
+    image: "/blog3_image.png",
     color: "from-red-500 to-pink-600",
     textColor: "text-red-100",
     mediumUrl: "https://medium.com/@himani-gulati/hyper-parameter-tuning-in-decision-trees-and-random-forests-3bdee09ea5af"
