@@ -2,17 +2,21 @@
 
 import { FaPython, FaDatabase, FaHtml5 } from "react-icons/fa";
 
+import { useRouter } from 'next/router'
+
+const { basePath } = useRouter()
+
 const skills = [
   { name: "Python", icon: <FaPython className="w-8 h-8 text-blue-600" /> },
-  { name: "Machine Learning", icon: <img src="/coding.png" alt="Machine Learning" className="w-8 h-8" /> },
-  { name: "Deep Learning", icon: <img src="/deep-learning.png" alt="Deep Learning" className="w-8 h-8" /> },
-  { name: "Data Visualisation", icon: <img src="/data-visualization.png" alt="Data Visualisation" className="w-8 h-8" /> },
-  { name: "Data Cleansing", icon: <img src="/data-management.png" alt="Data Cleansing" className="w-8 h-8" /> },
+  { name: "Machine Learning", icon: <img src={`${basePath}/coding.png`} alt="Machine Learning" className="w-8 h-8" /> },
+  { name: "Deep Learning", icon: <img src={`${basePath}/deep-learning.png`} alt="Deep Learning" className="w-8 h-8" /> },
+  { name: "Data Visualisation", icon: <img src={`${basePath}/data-visualization.png`} alt="Data Visualisation" className="w-8 h-8" /> },
+  { name: "Data Cleansing", icon: <img src={`${basePath}/data-management.png`} alt="Data Cleansing" className="w-8 h-8" /> },
   { name: "MySQL", icon: <FaDatabase className="w-8 h-8 text-blue-600" /> },
-  { name: "Computer Vision", icon: <img src="/computer.png" alt="Computer Vision" className="w-8 h-8" /> },
-  { name: "Data Analysis", icon: <img src="/analysis.png" alt="Data Analysis" className="w-8 h-8" /> },
-  { name: "HTML,CSS,Next.js", icon: <img src="/domain.png" alt="HTML,CSS,NextJs" className="w-8 h-8" /> },
-  { name: "Power BI", icon: <img src="/monitor.png" alt="Power BI" className="w-8 h-8" /> }
+  { name: "Computer Vision", icon: <img src={`${basePath}/computer.png`} alt="Computer Vision" className="w-8 h-8" /> },
+  { name: "Data Analysis", icon: <img src={`${basePath}/analysis.png`} alt="Data Analysis" className="w-8 h-8" /> },
+  { name: "HTML,CSS,Next.js", icon: <img src={`${basePath}/domain.png`} alt="HTML,CSS,NextJs" className="w-8 h-8" /> },
+  { name: "Power BI", icon: <img src={`${basePath}/monitor.png`} alt="Power BI" className="w-8 h-8" /> }
 ];
 
 export function SkillSection() {

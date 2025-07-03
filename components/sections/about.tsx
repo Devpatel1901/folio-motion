@@ -7,6 +7,10 @@ import { Card } from "@/components/ui/card"
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import Image from "next/image"
 
+import { useRouter } from 'next/router'
+
+const { basePath } = useRouter()
+
 const skills = [
   "Machine Learning ",
   "Python",
@@ -64,7 +68,7 @@ export function AboutSection() {
               className="relative aspect-square rounded-2xl overflow-hidden"
             >
               <Image
-                src="/main.jpg"
+                src={`${basePath}/main.jpg`}
                 alt="Profile"
                 fill
                 className="object-cover"
