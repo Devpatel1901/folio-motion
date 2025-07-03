@@ -14,7 +14,8 @@ const navItems = [
   { name: "About", path: "/#about" },
   { name: "Work", path: "/#blogs" },
   { name: "Skills", path: "/#skills" },
-  { name: "Experience", path: "/#experiences" },
+  { name: "Experience", path: "/#work-experience" },
+  { name: "Education", path: "/#education" },
   { name: "Contact", path: "/#contact" },
 ]
 
@@ -55,7 +56,7 @@ export function Navbar() {
             href="/"
             className="text-2xl font-bold tracking-tighter hover:opacity-80 transition-opacity"
           >
-            FM
+            hGulati
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
